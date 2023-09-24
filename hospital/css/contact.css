@@ -1,0 +1,113 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+section{
+    padding: 40px 15%;
+}
+.contact{
+    background: #f1d1d1;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    justify-content: center;
+    left: -300px;
+    grid-gap: 6rem;
+
+}
+.contact-image img{
+    max-width: 100%;
+    width: 720px;
+    height:auto;
+    border-radius: 10px;
+}
+.contact-form h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+span{
+    color: #693f4c;
+}
+.contact-form p{
+    color: #c6c9d8bf;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 1.8rem;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: rgb(54, 53, 53);
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 140px;
+}
+.contact-form form .btn{
+    display: inline-block;
+    color: #693f4c;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+.contact-form form .btn:hover{
+    border: 2px solid #693f4c;
+    background: transparent;
+    transform: scale(1.1);
+}
+@media (max-width:1570px){
+    section{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+    .contact-form h1{
+        font-size: 40px;
+    }
+    .contact-form p{
+        margin-bottom: 2rem;
+    }
+}
+@media(max-width:1090px){
+    .contact{
+        grid-gap: 2rem;
+        transition: .3s;
+    }
+}
+@media(max-width:1000px){
+    .contact{
+       grid-template-columns: 1fr;
+    }
+    .contact-form{
+        order: 2;
+    }
+    .contact-image img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
